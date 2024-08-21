@@ -8,22 +8,47 @@
 import UIKit
 
 class AppTabBarController: UITabBarController {
+    
+    private let homeViewController = UINavigationController(rootViewController: HomeViewController())
+    private let myPageViewController = UINavigationController(rootViewController: MyPageViewController())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setup()
+        setViewControllers()
+        configureTabBarItems()
     }
     
+    private func setup() {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            tabBar.scrollEdgeAppearance = appearance
+            view.backgroundColor = .systemBackground
+            tabBar.backgroundColor = .systemBackground
+//            tabBar.tintColor = .primary500
+//            tabBar.unselectedItemTintColor = .primary500
+        }
+        
+    private func setViewControllers() {
+        homeViewController.navigationBar.isTranslucent = false
+        homeViewController.navigationBar.backgroundColor = .systemBackground
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        myPageViewController.navigationBar.isTranslucent = false
+        myPageViewController.navigationBar.backgroundColor = .systemBackground
+        setViewControllers(
+            [homeViewController, myPageViewController],
+            animated: true
+        )
     }
-    */
-
+    private func configureTabBarItems() {
+        if let items = tabBar.items {
+            items[0].selectedImage = UIImage(systemName: ImageSystemName.houseFill.rawValue)
+            items[0].image = UIImage(systemName: ImageSystemName.house.rawValue)
+            items[0].title = "Home"
+            
+            items[1].selectedImage = UIImage(systemName: ImageSystemName.messageFill.rawValue)
+            items[1].image = UIImage(systemName: ImageSystemName.message.rawValue)
+            items[1].title = "MyPage"
+        }
+    }
 }

@@ -20,6 +20,9 @@
 		0846BA142C73419000DE39B1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846BA132C73419000DE39B1 /* LoginViewModel.swift */; };
 		0846BA192C73420E00DE39B1 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846BA182C73420E00DE39B1 /* MyPageViewController.swift */; };
 		0846BA1B2C73422E00DE39B1 /* MyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846BA1A2C73422E00DE39B1 /* MyPageViewModel.swift */; };
+		0846BA1D2C74613B00DE39B1 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846BA1C2C74613B00DE39B1 /* AppTabBarController.swift */; };
+		0846BA202C7475AA00DE39B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846BA1F2C7475AA00DE39B1 /* Constants.swift */; };
+		0846BA232C7486BE00DE39B1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846BA222C7486BE00DE39B1 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		0846BA132C73419000DE39B1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0846BA182C73420E00DE39B1 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		0846BA1A2C73422E00DE39B1 /* MyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewModel.swift; sourceTree = "<group>"; };
+		0846BA1C2C74613B00DE39B1 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		0846BA1F2C7475AA00DE39B1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0846BA222C7486BE00DE39B1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +113,11 @@
 		0846B9D52C71D36D00DE39B1 /* Coder */ = {
 			isa = PBXGroup;
 			children = (
-				0846BA062C73383400DE39B1 /* Application */,
-				0846BA072C73385800DE39B1 /* Presentation */,
-				0846B9DF2C71D36E00DE39B1 /* Assets.xcassets */,
 				0846B9E42C71D36E00DE39B1 /* Info.plist */,
+				0846BA062C73383400DE39B1 /* Application */,
+				0846BA1E2C74759300DE39B1 /* Common */,
+				0846BA072C73385800DE39B1 /* Presentation */,
+				0846BA212C74822700DE39B1 /* Resources */,
 			);
 			path = Coder;
 			sourceTree = "<group>";
@@ -137,6 +144,7 @@
 			children = (
 				0846B9D62C71D36D00DE39B1 /* AppDelegate.swift */,
 				0846B9D82C71D36D00DE39B1 /* SceneDelegate.swift */,
+				0846BA1C2C74613B00DE39B1 /* AppTabBarController.swift */,
 				0846B9E12C71D36E00DE39B1 /* LaunchScreen.storyboard */,
 			);
 			path = Application;
@@ -225,6 +233,23 @@
 				0846BA182C73420E00DE39B1 /* MyPageViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0846BA1E2C74759300DE39B1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0846BA1F2C7475AA00DE39B1 /* Constants.swift */,
+				0846BA222C7486BE00DE39B1 /* UIColor+Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0846BA212C74822700DE39B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0846B9DF2C71D36E00DE39B1 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,9 +385,12 @@
 				0846B9DB2C71D36D00DE39B1 /* HomeViewController.swift in Sources */,
 				0846B9D72C71D36D00DE39B1 /* AppDelegate.swift in Sources */,
 				0846BA192C73420E00DE39B1 /* MyPageViewController.swift in Sources */,
+				0846BA232C7486BE00DE39B1 /* UIColor+Extension.swift in Sources */,
 				0846BA142C73419000DE39B1 /* LoginViewModel.swift in Sources */,
 				0846B9D92C71D36D00DE39B1 /* SceneDelegate.swift in Sources */,
+				0846BA202C7475AA00DE39B1 /* Constants.swift in Sources */,
 				0846BA122C73413800DE39B1 /* LoginViewController.swift in Sources */,
+				0846BA1D2C74613B00DE39B1 /* AppTabBarController.swift in Sources */,
 				0846BA0D2C7340C600DE39B1 /* HomeViewModel.swift in Sources */,
 				0846BA1B2C73422E00DE39B1 /* MyPageViewModel.swift in Sources */,
 			);
